@@ -9,47 +9,85 @@
   <body>
     <header>
       <nav><!--set width-->
-        <img>
-        <div></div>
-        <ul>
-          <li></li>
-          <li></li>
+        <img src="assets/img/icons/logo.png">
+        <span class="uppercase">Surf & Paddle Co. Blog</span>
+        <ul class="uppercase"><!--inline-block-->
+          <li>About</li>
+          <li>Search</li>
+          <li><img src="assets/img/icons/search.png" alt="Magnifying glass search icon"></li>
         </ul>
       </nav>
-      <hgroup></hgroup><!--set width-->
+      <section><!-- set width -->
+        <!--hgroup tag now obsolete: http://www.w3.org/html/wg/drafts/html/master/obsolete.html -->
+        <h1 class="uppercase">Surf & Paddle Co.</h1>
+        <h3>An Ironyard Academy Project Est. 2013</h3>
+      </section><!--set width-->
     </header>
-
     <section class="content">
       <article>
-        <div class="article-container">
-          <h1>
-          </h1>
+        <div class="article-container uppercase">
+          <h1>A fantastic engaging headline goes here</h1>
           <ul><!--inline-block -->
-            <li><img src="author.jpg" alt="Anne Marie"></li>
+            <li><img src="assets/img/anne-marie-icon.png" alt="Small-sized author image"><!--Resize image w/ CSS --></li>
             <li><a href="http://annemarie.com" rel="author">Anne Marie</a></li>
             <li>
               <span>on<time datetime="2013-10-07T09:22Z"> Monday, Oct. 7th 9:22pm</time></span>
             </li>
           </ul>
-          <p>Network of wormholes something incredible is waiting to be known dispassionate extraterrestrial observer two ghostly white figures in coveralls and helmets are soflty dancing cosmos, light years a mote of dust suspended</p>
-          <p>realm of the galaxies stirred by starlight cosmos two ghostly white figures in coveralls and helmets are soflty dancing hundreds of thousands.</p>
-          <quote>WOAH, THAT'S RADICAL</quote>
-          <p>Tunguska event, stirred by starlight, across the centuries trillion. Prime number! Ship of the imagination. Billions upon billions, culture how far away corpus callosum a mote of dust suspended in a sunbeam, worldlets, the only home we've ever known permanence of the stars cosmos, birth the ash of stellar alchemy. Billions upon billions birth hundreds of thousands colonies inconspicuous motes of rock and gas star stuff.</p>
-          <p>Harvesting star light another world venture a billion trillion star stuff harvesting star light billions upon billions two ghostly white figures in coveralls and.</p>
-
+          <p>Locavore ea meggings, deep v gentrify bespoke butcher yr typewriter. Nisi sunt 8-bit craft beer, leggings deep v biodiesel Williamsburg. Actually hashtag art party nesciunt squid pour-over. Kitsch Vice cray, Marfa brunch fingerstache oficcia Schlitz Blue Bottle cillum. Mlkshk 8-bit aliquip fingerstache sunt.</p>
+          <p>Distillery ad sriracha, synth wolf street art brunch excepteur consectetur art party irony fugiat. Duis chia yr, pour-over Portland velit High Life non aesthetic fugiat tattoed shabby chic mixtape.</p>
+          <quote class="uppercase">Woah, that's radical!</quote>
+          <p>Swag nisi mixtape cray, non hashtag blog tote bag lolor bitters before they sold out ea dolore. Raw denim mistape drinking vinegar, Vice 3 wolf moon authentic officia aute id. Keffiyeh yr retro, salvia do alique(rollover) leggings selvage narwhal farm-to-table dolor Tonx DIY photo booth. Bitters gastropub non 3 wolf moon Blue Bottle organic, cray aesthetic jean shorts velit umami. Mlkshk roof party cardigan, farm-to-table aute plaid wolf master cleanse. Thundercats tattoed lo-fi culpa, mollit Pinterest American Apparel. 3 wolf moon VHS hella, Tonx beard chambray sustainable jean shorts synth mlkshk fugiat excepteur banh mi eu whatever.</p>
+          <p>Vinyl sartorial culpa bespoke labore, ethical redymade tofu selfies ut locavore commodo mumblecore paleo typewriter. Mumblecore selfies nostrud, asymmetrcial 90's fannypack est Blue Bottle ethnic blog. Narwhal Shoreditch fixie tofu, nisi before
+          </p>
+          <div class="social-icon">
+            <span><!--icon font--></span>
+            <span>Read Comments</span>
+          </div>
+          <div class="social-icon">
+            <span><!--icon font--></span>
+            <span>Read Later</span>
+          </div>
+          <div class="social-icon">
+            <span><!--icon font--></span>
+            <span>Share This Post</span>
+          </div>
         </div>
       </article>
       <sidebar>
+        <figure class="author-social">
+          <img src="assets/img/anne-marie-icon.png" alt="Medium-sized author image">
+
+          <span class="uppercase">Anne Marie</span>
+          <ul>
+            <li>Twitter</li><!--inline-block --><!--border right -->
+            <li>Facbook</li><!--border right -->
+            <li>Instagram</li>
+          </ul>
+        </figure>
+        <figure class="ad"><!--aligned to left somehow -->
+          <img>
+          <figcaption><a href="www.ads.com">About This Ad</a></figcaption>
+        </figure>
+        <section><!--aligned to left somehow -->
+          <h1 class="uppercase">Sidebar Section Heading</h1>
+          <p>Distillery ad sriracha, synth wolf street art brunch excepteur consectetur art party irony fugiat. Duis chia yr, pour-over Portland velit High Life non aesthetic fugiat tattoed shabby chic mixtape.ethical cornhole mustache roof party proident aesthetic hoodie.
+          </p>
+        </section>
+
+
+
       </sidebar>
     </section>
 
     <section class="carousel">
-      <h2></h2><!--set width-->
+      <h2 class="uppercase">Most Popular Posts</h2><!--set width-->
       <section class="carousel-images">
         <img src="http://lorempixel.com/output/abstract-q-c-325-325-9.jpg" alt="A surfer">
         <img src="http://lorempixel.com/output/abstract-q-c-325-325-9.jpg" alt="Freshly poured beers at a bar">
         <img src="http://lorempixel.com/output/abstract-q-c-325-325-9.jpg" alt="Zach G.">
         <img src="http://lorempixel.com/output/abstract-q-c-325-325-9.jpg" alt="Liquor on top of a bar">
+        <!-- Add overlay text with CSS -->
       </section>
     </section>
 
@@ -57,13 +95,14 @@
       <div class="footer-container"><!--set width-->
         <div class="copyright-container">
           <img src="assets/img/icons/theironyard.jpg" alt="The Iron Yard Logo">
-          <small></small>
+          <small>The Ironyard Copyright 2013, All Rights Reserved</small>
         </div>
         <nav>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Nav Item 1</li>
+            <li>Nav Item 2</li>
+            <li>Nav Item 3</li>
+            <li>Nav Item 5</li>
           </ul>
         </nav>
       </div>
