@@ -1,0 +1,105 @@
+/*--------------------------------
+UNIVERSAL
+--------------------------------*/
+
+body {
+  box-sizing: border-box;
+}
+
+/*--------------------------------
+
+BODY
+--------------------------------*/
+body {
+  max-width: 1300px;
+  height: 2104px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*--------------------------------
+
+COLORS
+--------------------------------*/
+
+
+/*--------------------------------
+
+HEADER
+--------------------------------*/
+header {
+  background-color: #1c78bb;
+  height: 523px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header-container {
+  max-width: 990px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-container nav img {
+  vertical-align: middle;
+}
+
+.header-container ul {
+  float: right;
+}
+
+.header-container ul li {
+  display: inline-block;
+}
+
+header div.hgroup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+}
+
+h3 {
+  color: #083451;
+  font-size: 14px;
+  text-align: center;
+
+}
+
+
+/*--------------------------------
+
+CONTENT SECTION
+font-family: 'Open Sans', sans-serif;
+--------------------------------*/
+
+
+/*--------------------------------
+
+ARTICLE
+--------------------------------*/
+
+
+/*--------------------------------
+
+SIDEBAR
+--------------------------------*/
+
+
+/*--------------------------------
+
+CAROUSEL SLIDER
+--------------------------------*/
+
+/*--------------------------------
+
+FOOTER
+--------------------------------*/
