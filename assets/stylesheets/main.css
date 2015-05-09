@@ -19,6 +19,11 @@ body {
   text-transform: uppercase;
 }
 
+.hor-center-container {
+  width: 990px;
+  margin: 0 auto;
+}
+
 /*--------------------------------
 
 COLORS
@@ -33,35 +38,41 @@ header {
   background-color: #1c78bb;
   height: 523px;
   font-family: 'Oswald', sans-serif;
-}
-
-.header-container {
-  max-width: 990px;
-  height: 100%;
-  margin: 0 auto;
   position: relative;
 }
 
-.header-container nav img {
+header section.top-bar {
+  position: absolute;
+  top: 0px;
+  width: 990px;
+}
+
+header section.top-bar img {
   vertical-align: middle;
 }
 
-.header-container ul {
+header .transparent-image {
+  visibility: hidden;
+}
+
+header section.top-bar nav {
   float: right;
 }
 
-.header-container ul li {
+header section.top-bar ul {
+  display: inline-block;
+}
+
+header section.top-bar ul li {
   display: inline-block;
 }
 
 header div.hgroup {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+  position: relative;
+  top: 225px;
 }
 
-h1 {
+header h1 {
   color: #fff;
   font-size: 70px;
   text-align: center;
@@ -81,25 +92,81 @@ CONTENT SECTION
 font-family: 'Open Sans', sans-serif;
 --------------------------------*/
 
+section.content {
+  width: 100%;
+  height: 1008px;
+}
+
 
 /*--------------------------------
 
 ARTICLE
 --------------------------------*/
 
+.content > article {
+  display: inline-block;
+  height: 100%;
+}
+
+.article-container {
+  width: 861px;
+  /* padding-left: 164px; */
+  height: 100%;
+}
+.article-container h1 {
+  color: #083452;
+  font-size: 45px;
+}
+
+
 
 /*--------------------------------
 
 SIDEBAR
 --------------------------------*/
+.content > sidebar {
+  display: inline-block;
+  width: 439px;
+  height: 100%;
+  vertical-align: top;
+}
 
+sidebar figure.author-social {
+  height: 270px;
+}
+
+sidebar figure.ad {
+  height: 374px;
+}
+
+sidebar section.sidebar-heading {
+  height: 364px;
+}
 
 /*--------------------------------
 
 CAROUSEL SLIDER
 --------------------------------*/
+section.carousel {
+  height: 476px;
+}
+
+section.carousel > h2 {
+  text-align: center;
+  line-height: 146px;
+  font-size: 45px;
+}
 
 /*--------------------------------
 
 FOOTER
 --------------------------------*/
+
+footer {
+  background-color: #083452;
+}
+
+.footer-container {
+  max-width: 990px;
+  margin: 0 auto;
+}
