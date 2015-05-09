@@ -28,34 +28,36 @@
         </div>
       </div>
     </header>
-    <section class="content">
-      <article>
-        <div class="article-container">
-          <h1 class="uppercase">A fantastic engaging headline goes here</h1>
-          <ul><!--inline-block -->
-            <li><img src="assets/img/anne-marie-icon.png" alt="Small-sized author image"><!--Resize image w/ CSS --></li>
-            <li><a href="http://annemarie.com" rel="author">Anne Marie</a></li>
-            <li>
-              <span>on<time datetime="2013-10-07T09:22Z"> Monday, Oct. 7th 9:22pm</time></span>
-            </li>
-          </ul>
-          <p>Locavore ea meggings, deep v gentrify bespoke butcher yr typewriter. Nisi sunt 8-bit craft beer, leggings deep v biodiesel Williamsburg. Actually hashtag art party nesciunt squid pour-over. Kitsch Vice cray, Marfa brunch fingerstache oficcia Schlitz Blue Bottle cillum. Mlkshk 8-bit aliquip fingerstache sunt.</p>
-          <p>Distillery ad sriracha, synth wolf street art brunch excepteur consectetur art party irony fugiat. Duis chia yr, pour-over Portland velit High Life non aesthetic fugiat tattoed shabby chic mixtape.</p>
-          <quote class="uppercase">Woah, that's radical!</quote>
-          <p>Swag nisi mixtape cray, non hashtag blog tote bag lolor bitters before they sold out ea dolore. Raw denim mistape drinking vinegar, Vice 3 wolf moon authentic officia aute id. Keffiyeh yr retro, salvia do alique(rollover) leggings selvage narwhal farm-to-table dolor Tonx DIY photo booth. Bitters gastropub non 3 wolf moon Blue Bottle organic, cray aesthetic jean shorts velit umami. Mlkshk roof party cardigan, farm-to-table aute plaid wolf master cleanse. Thundercats tattoed lo-fi culpa, mollit Pinterest American Apparel. 3 wolf moon VHS hella, Tonx beard chambray sustainable jean shorts synth mlkshk fugiat excepteur banh mi eu whatever.</p>
-          <p>Vinyl sartorial culpa bespoke labore, ethical redymade tofu selfies ut locavore commodo mumblecore paleo typewriter. Mumblecore selfies nostrud, asymmetrcial 90's fannypack est Blue Bottle ethnic blog. Narwhal Shoreditch fixie tofu, nisi before.</p>
-          <div class="social-icon">
-            <span><!--icon font--></span>
-            <span>Read Comments</span>
-          </div>
-          <div class="social-icon">
-            <span><!--icon font--></span>
-            <span>Read Later</span>
-          </div>
-          <div class="social-icon">
-            <span><!--icon font--></span>
-            <span>Share This Post</span>
-          </div>
+    <section class="content hor-center-container">
+      <article class="main-article">
+        <h1 class="uppercase">A fantastic engaging headline goes here</h1>
+        <ul class="byline">
+          <li><img src="assets/img/anne-marie-icon.png" alt="Small-sized author image" class="icon-size-image"></li>
+          <li><a href="http://annemarie.com" rel="author">Anne Marie</a></li>
+          <li><span>on<time datetime="2013-10-07T09:22Z"> Monday, Oct. 7th 9:22pm</time></span></li>
+        </ul>
+        <br>
+        <p>Locavore ea meggings, deep v gentrify bespoke butcher yr typewriter. Nisi sunt 8-bit craft beer, leggings deep v biodiesel Williamsburg. Actually hashtag art party nesciunt squid pour-over. Kitsch Vice cray, Marfa brunch fingerstache oficcia Schlitz Blue Bottle cillum. Mlkshk 8-bit aliquip fingerstache sunt.</p>
+        <br>
+        <p>Distillery ad sriracha, synth wolf street art brunch excepteur consectetur art party irony fugiat. Duis chia yr, pour-over Portland velit High Life non aesthetic fugiat tattoed shabby chic mixtape.</p>
+        <br>
+        <blockquote class="uppercase">&nbsp;Woah, that's radical!</blockquote>
+        <br>
+        <p>Swag nisi mixtape cray, non hashtag blog tote bag lolor bitters before they sold out ea dolore. Raw denim mistape drinking vinegar, Vice 3 wolf moon authentic officia aute id. Keffiyeh yr retro, salvia do <a href="http://www.wikipedia.org">alique(rollover)</a> leggings selvage narwhal farm-to-table dolor Tonx DIY photo booth. Bitters gastropub non 3 wolf moon Blue Bottle organic, cray aesthetic jean shorts velit umami. Mlkshk roof party cardigan, farm-to-table aute plaid wolf master cleanse. Thundercats tattoed lo-fi culpa, mollit Pinterest American Apparel. 3 wolf moon VHS hella, Tonx beard chambray sustainable jean shorts synth mlkshk fugiat excepteur banh mi eu whatever.</p>
+        <br>
+        <p>Vinyl sartorial culpa bespoke labore, ethical redymade tofu selfies ut locavore commodo mumblecore paleo typewriter. Mumblecore selfies nostrud, asymmetrcial 90's fannypack est Blue Bottle ethnic blog. Narwhal Shoreditch fixie tofu, nisi before.</p>
+        <br>
+        <div class="social-button">
+          <span class="button-icon">M<!--icon font--></span><!--
+          --><span class="button-text">Read Comments</span>
+        </div>
+        <div class="social-button">
+          <span class="button-icon">M<!--icon font--></span><!--
+          --><span class="button-text">Read Later</span>
+        </div>
+        <div class="social-button">
+          <span class="button-icon">M<!--icon font--></span><!--
+          --><span class="button-text">Share This Post</span>
         </div>
       </article><!--
       --><sidebar>
@@ -68,8 +70,8 @@
             <li>Instagram</li>
           </ul>
         </figure>
-        <figure class="ad"><!--aligned to left somehow -->
-          <img>
+        <figure class="ad">
+          <img src="http://lorempixel.com/output/sports-h-c-278-301-9.jpg">
           <figcaption><a href="www.ads.com">About This Ad</a></figcaption>
         </figure>
         <section class="sidebar-heading"><!--aligned to left somehow -->
@@ -79,7 +81,7 @@
       </sidebar>
     </section>
     <section class="carousel">
-      <h2 class="uppercase">Most Popular Posts</h2><!--set width-->
+      <h1 class="uppercase">Most Popular Posts</h1><!--set width-->
       <section class="carousel-images">
         <img src="http://lorempixel.com/output/food-q-c-325-325-2.jpg" alt="A surfer"><!--
         --><img src="http://lorempixel.com/output/food-q-c-325-325-2.jpg" alt="Freshly poured beers at a bar"><!--
@@ -89,19 +91,20 @@
       </section>
     </section>
     <footer>
-      <div class="footer-container"><!--set width-->
-        <div class="copyright-container">
-          <img src="assets/img/icons/theironyard.png" alt="The Iron Yard Logo">
-          <small>The Ironyard Copyright 2013, All Rights Reserved</small>
-        </div>
-        <nav>
-          <ul>
-            <li>Nav Item 1</li>
-            <li>Nav Item 2</li>
-            <li>Nav Item 3</li>
-            <li>Nav Item 5</li>
-          </ul>
-        </nav>
+      <div class="hor-center-container">
+        <section class="bottom-bar">
+            <img src="assets/img/icons/theironyard.png" alt="The Iron Yard Logo">
+            <small>The Ironyard Copyright 2013, All Rights Reserved</small>
+          <nav>
+            <img src="assets/img/icons/theironyard.png" alt="The Iron Yard Logo" class="transparent-image">
+            <ul>
+              <li class="right-border">Nav Item 1&nbsp;</li>
+              <li class="right-border">Nav Item 2&nbsp;</li>
+              <li class="right-border">Nav Item 3&nbsp;</li>
+              <li>Nav Item 5</li>
+            </ul>
+          </nav>
+        </section>
       </div>
     </footer>
   </body>
