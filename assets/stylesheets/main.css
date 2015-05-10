@@ -136,8 +136,8 @@ header div.hgroup {
 
 header h1 {
   color: #fff;
-  font-size: 107px;
-  letter-spacing: -5px;
+  font-size: 106px;
+  letter-spacing: -4px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
@@ -189,6 +189,7 @@ ARTICLE
   font-size: 63px;
   font-family: 'Oswald', arial;
   line-height: 1.1;
+  word-spacing: -5px;
 }
 
 .main-article ul.byline {
