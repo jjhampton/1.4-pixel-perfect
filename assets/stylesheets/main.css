@@ -19,6 +19,10 @@ body {
   text-transform: uppercase;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .hor-center-container {
   width: 1032px;
   margin: 0 auto;
@@ -165,6 +169,7 @@ ARTICLE
   padding-right: 80px;
   padding-bottom: 69px;
   padding-left: 29px;
+  margin-right: 30px;
 }
 
 .main-article h1 {
@@ -292,7 +297,7 @@ div.social-button:last-child {
 
 SIDEBAR
 --------------------------------*/
-.content sidebar {
+section.content sidebar {
   display: inline-block;
   width: 278px;
   height: 100%;
@@ -300,7 +305,7 @@ SIDEBAR
 }
 
 
-sidebar figure.author-social {
+section.content sidebar figure.author-social {
   height: 270px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -310,41 +315,60 @@ sidebar figure.author-social {
 figure.author-social > div {
   font-size: 16px;
   color: #1e76b7;
+  padding-top: 12px;
+}
+
+figure.author-social ul {
+  padding-top: 3px;
 }
 
 figure.author-social li {
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   color: #a7b6c2;
 }
 
-sidebar li.right-border {
+figure.author-social li:first-child,
+figure.author-social li:nth-child(2) {
+  margin-right: 7px;
   border-right: 1px solid #fafafa;
 }
 
-sidebar figure.ad {
+section.content sidebar figure.ad figcaption {
+  margin-top: 4px;
+}
+
+section.content sidebar figure.ad {
   height: 374px;
   font-family: 'Open Sans', sans-serif;
   text-align: right;
 }
 
-sidebar figure.ad figcaption a {
+section.content sidebar figure.ad figcaption a {
+  font-size: 13px;
   color: #b9c6ce;
+  word-spacing: 1px;
 }
 
-sidebar section.sidebar-heading {
+section.sidebar-heading {
   height: 364px;
 }
 
 section.sidebar-heading h1 {
-  font-size: 16px;
+  font-size: 18px;
   color: #0b70af;
   font-family: 'Oswald';
 }
 
 section.sidebar-heading p {
-  font-size: 12px;
+  padding-top: 7px;
+  position: relative;
+  right: 2px;
+  font-size: 14px;
   color: #a7b6c2;
+  word-spacing: -2px;
+  line-height: 24px;
+  text-align: left;
 }
 
 /*--------------------------------
@@ -359,7 +383,7 @@ section.carousel {
 section.carousel > h1 {
   text-align: center;
   line-height: 146px;
-  font-size: 45px;
+  font-size: 64px;
   color: #083452;
   font-family: 'Oswald', arial;
 }
@@ -371,12 +395,33 @@ section.carousel > h1 {
 
 .carousel-images h2 {
   position: absolute;
-  left: 18px;
-  bottom: 16px;
+  left: 15px;
+  bottom: 17px;
   width: 100%;
   color: #fff;
   font-family: 'Oswald', arial;
-  font-size: 24px;
+  font-size: 30px;
+}
+
+.slider div:first-child h2 {
+  bottom: 17px;
+  left: 12px;
+}
+
+.slider div:nth-child(2) h2 {
+  bottom: 17px;
+  left: 16px;
+}
+
+.slider div:nth-child(3) h2  {
+  left: 19px;
+  bottom: 18px;
+  line-height: 35px;
+}
+
+.slider div:last-child h2  {
+  bottom: 17px;
+  left: 18px;
 }
 
 /*--------------------------------
