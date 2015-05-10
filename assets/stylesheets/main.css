@@ -193,16 +193,53 @@ SIDEBAR
   vertical-align: top;
 }
 
+
 sidebar figure.author-social {
   height: 270px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 83px;
+}
+
+figure.author-social > div {
+  font-size: 16px;
+  color: #1e76b7;
+}
+
+figure.author-social li {
+  display: inline-block;
+  font-size: 12px;
+  color: #a7b6c2;
+}
+
+sidebar li.right-border {
+  border-right: 1px solid #fafafa;
 }
 
 sidebar figure.ad {
   height: 374px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: right;
+}
+
+sidebar figure.ad figcaption a {
+
+  color: #b9c6ce;
 }
 
 sidebar section.sidebar-heading {
   height: 364px;
+}
+
+section.sidebar-heading h1 {
+  font-size: 16px;
+  color: #0b70af;
+  font-family: 'Oswald';
+}
+
+section.sidebar-heading p {
+  font-size: 12px;
+  color: #a7b6c2;
 }
 
 /*--------------------------------
