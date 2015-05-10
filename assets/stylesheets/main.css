@@ -208,7 +208,8 @@ ARTICLE
 
 .main-article ul.byline span {
   color: #bac6cf;
-  font-size: 15px;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main-article time {
@@ -260,23 +261,33 @@ div.p-container:nth-of-type(2) {
   color: #fff;
   font-size: 13px;
   -webkit-box-sizing: content-box;
-  padding: 2px 10px 9px 3px;
+  padding: 3px 10px 9px 3px;
 }
 
 .main-article span.button-icon {
   background-color: #5e686f;
   -webkit-box-sizing: content-box;
-  padding: 4px 10px 9px 10px;
+  padding: 5px 9px 7px 10px;
 }
 
 .main-article span.button-text {
   background-color: #a3b3bf;
   -webkit-box-sizing: content-box;
-  padding: 4px 10px 9px 13px;
+  padding: 5px 12px 7px 14px;
 }
 
+div.social-button:nth-child(2) {
+  margin-left: -6px;
+}
 
+div.social-button:last-child {
+  margin-left: -3px;
+}
 
+/* div.social-button:nth-child(2),
+div.social-button:last-child {
+
+} */
 /*--------------------------------
 
 SIDEBAR
