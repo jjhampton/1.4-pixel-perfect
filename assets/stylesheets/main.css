@@ -82,6 +82,11 @@ header {
   position: relative;
 }
 
+header a {
+  text-decoration: none;
+  color: #04344d;
+}
+
 header section.top-bar {
   position: absolute;
   top: 7px;
@@ -217,7 +222,7 @@ ARTICLE
   /* vertical-align: middle;*/
 }
 
-.main-article ul.byline a {
+.main-article ul.byline a#author {
   color: #026eae;
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
@@ -257,13 +262,13 @@ ARTICLE
   word-spacing: -2px;;
 }
 
-.main-article p a {
-  color: #a2b3be;
+.main-article a {
+  color: #b5c2ca;
   text-decoration: underline;
   transition-property: color;
 }
 
-.main-article p a:hover {
+.main-article a:hover {
   color: #2d7fbc;
 }
 
@@ -333,13 +338,17 @@ div.social-button:first-child {
 
 div.social-button:nth-child(2) {
   margin-left: -7px;
-  display: hidden;
 }
 
-div.social-button:last-child {
-  margin-left: -3px;
-  display: hidden;
+div.social-button:nth-child(2) span.button-text {
+padding-right: 15px;}
 
+div.social-button:last-child {
+  margin-left: -5px;
+}
+
+div.social-button:last-child span.button-text {
+  padding-right: 14px;
 }
 
 /*--------------------------------
@@ -396,7 +405,13 @@ section.content sidebar figure.ad {
 section.content sidebar figure.ad figcaption a {
   font-size: 13px;
   color: #b9c6ce;
+  text-decoration: underline;
   word-spacing: 1px;
+  transition-property: color;
+}
+
+section.content sidebar figure.ad figcaption a:hover {
+  color: #000;
 }
 
 section.sidebar-heading {
@@ -418,6 +433,16 @@ section.sidebar-heading p {
   word-spacing: -2px;
   line-height: 24px;
   text-align: left;
+}
+
+section.sidebar-heading p a {
+  color: #a7b6c2;
+  text-decoration: underline;
+  transition-property: color;
+}
+
+section.sidebar-heading p a:hover {
+  color: #2d7fbc;
 }
 
 /*--------------------------------
@@ -442,25 +467,25 @@ section.carousel > h1 {
   position: relative;
 }
 
-div.carousel-images:first-child {
+a.carousel-images:first-child {
   height: 330px;
   width: 324px;
   background-image: url("../img/sumo.jpg");
 }
 
-div.carousel-images:nth-child(2) {
+a.carousel-images:nth-child(2) {
   height: 330px;
   width: 325px;
   background-image: url("../img/bread.jpg");
 }
 
-div.carousel-images:nth-child(3) {
+a.carousel-images:nth-child(3) {
   height: 330px;
   width: 326px;
   background-image: url("../img/apple.jpg");
 }
 
-div.carousel-images:last-child {
+a.carousel-images:last-child {
   height: 330px;
   width: 325px;
   background-image: url("../img/drinks.jpg");
@@ -477,11 +502,11 @@ div.carousel-images:last-child {
   transition-property: color;
 }
 
-div.carousel-images:hover > h2 {
+a.carousel-images:hover > h2 {
   color: #fff;
 }
 
-div.carousel-images:hover > div.transparent-color-layer-slider {
+a.carousel-images:hover > div.transparent-color-layer-slider {
   background-color: rgba(15, 92, 156, 0);
 }
 
