@@ -250,6 +250,12 @@ ARTICLE
   text-decoration: underline;
 }
 
+.main-article time a {
+  color: #bac6cf;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .main-article div.p-container {
   padding-bottom: 21px;
 }
@@ -260,13 +266,13 @@ ARTICLE
   line-height: 27px;
 }
 
-.main-article a {
+.main-article p a {
   color: #b5c2ca;
   text-decoration: underline;
   transition-property: color;
 }
 
-.main-article a:hover {
+.main-article p a:hover {
   color: #2d7fbc;
 }
 
@@ -299,7 +305,7 @@ div.p-container:nth-of-type(2) {
   padding-bottom: 19px;
 }
 
-.main-article div.social-button {
+.main-article a.social-button {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
@@ -308,11 +314,11 @@ div.p-container:nth-of-type(2) {
   padding: 3px 10px 9px 3px;
 }
 
-.main-article div.social-button:hover >  span.button-icon {
+.main-article a.social-button:hover >  span.button-icon {
   background-color: #043450;
 }
 
-.main-article div.social-button:hover >  span.button-text {
+.main-article a.social-button:hover >  span.button-text {
   background-color: #026eae;
 }
 
@@ -334,22 +340,22 @@ div.p-container:nth-of-type(2) {
   transition-timing-function: ease-out;
 }
 
-div.social-button:first-child {
+a.social-button:first-child {
   margin-left: 0px;
 }
 
-div.social-button:nth-child(2) {
+a.social-button:nth-child(2) {
   margin-left: -7px;
 }
 
-div.social-button:nth-child(2) span.button-text {
+a.social-button:nth-child(2) span.button-text {
 padding-right: 15px;}
 
-div.social-button:last-child {
+a.social-button:last-child {
   margin-left: -5px;
 }
 
-div.social-button:last-child span.button-text {
+a.social-button:last-child span.button-text {
   padding-right: 14px;
 }
 
