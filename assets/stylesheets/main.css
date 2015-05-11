@@ -38,6 +38,17 @@ body {
   height: 100%;
 }
 
+.transparent-color-layer-slider {
+  background-color: rgba(15, 92, 156, 0.9);
+  /*above is color for header, can change if used elsewhere */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition-property: background-color;
+}
+
 .transparent-image {
   visibility: hidden;
 }
@@ -207,6 +218,7 @@ ARTICLE
 }
 
 .main-article ul.byline a {
+  color: #026eae;
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
@@ -242,12 +254,19 @@ ARTICLE
   color: #5e686f;
   font-size: 15px;
   line-height: 27px;
+  word-spacing: -2px;;
 }
 
 .main-article p a {
-  color: #2d7fbc;
+  color: #a2b3be;
   text-decoration: underline;
+  transition-property: color;
 }
+
+.main-article p a:hover {
+  color: #2d7fbc;
+}
+
 
 .main-article .quote-container {
   padding-bottom: 38px;
@@ -263,8 +282,11 @@ ARTICLE
 
 .quote-container hr {
   display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 6px;
   border: none;
-  width: 1px;
+  width: 2px;
   size: 56px;
   background-color: #d3d3d3;
 }
@@ -282,26 +304,43 @@ div.p-container:nth-of-type(2) {
   padding: 3px 10px 9px 3px;
 }
 
+.main-article div.social-button:hover >  span.button-icon {
+  background-color: #043450;
+}
+
+.main-article div.social-button:hover >  span.button-text {
+  background-color: #026eae;
+}
+
 .main-article span.button-icon {
   background-color: #5e686f;
   -webkit-box-sizing: content-box;
   padding: 5px 9px 7px 10px;
+  transition-property: background-color;
+  transition-duration: 0.1s;
 }
 
 .main-article span.button-text {
   background-color: #a3b3bf;
   -webkit-box-sizing: content-box;
   padding: 5px 12px 7px 14px;
+  transition-property: background-color;
+}
+
+div.social-button:first-child {
+  margin-left: 0px;
 }
 
 div.social-button:nth-child(2) {
-  margin-left: -6px;
+  margin-left: -7px;
+  display: hidden;
 }
 
 div.social-button:last-child {
   margin-left: -3px;
-}
+  display: hidden;
 
+}
 
 /*--------------------------------
 
@@ -403,14 +442,47 @@ section.carousel > h1 {
   position: relative;
 }
 
+div.carousel-images:first-child {
+  height: 330px;
+  width: 324px;
+  background-image: url("../img/sumo.jpg");
+}
+
+div.carousel-images:nth-child(2) {
+  height: 330px;
+  width: 325px;
+  background-image: url("../img/bread.jpg");
+}
+
+div.carousel-images:nth-child(3) {
+  height: 330px;
+  width: 326px;
+  background-image: url("../img/apple.jpg");
+}
+
+div.carousel-images:last-child {
+  height: 330px;
+  width: 325px;
+  background-image: url("../img/drinks.jpg");
+}
+
 .carousel-images h2 {
   position: absolute;
   left: 15px;
   bottom: 17px;
   width: 100%;
-  color: #fff;
+  color: #043450;
   font-family: 'Oswald', arial;
   font-size: 30px;
+  transition-property: color;
+}
+
+div.carousel-images:hover > h2 {
+  color: #fff;
+}
+
+div.carousel-images:hover > div.transparent-color-layer-slider {
+  background-color: rgba(15, 92, 156, 0);
 }
 
 .slider div:first-child h2 {
